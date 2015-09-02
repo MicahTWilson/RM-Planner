@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		595BE21C1B912BDB000C45E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595BE21B1B912BDB000C45E2 /* AppDelegate.swift */; };
 		595BE21F1B912BDB000C45E2 /* RM_Planner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 595BE21D1B912BDB000C45E2 /* RM_Planner.xcdatamodeld */; };
-		595BE2211B912BDB000C45E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595BE2201B912BDB000C45E2 /* ViewController.swift */; };
+		595BE2211B912BDB000C45E2 /* DailyPlansViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595BE2201B912BDB000C45E2 /* DailyPlansViewController.swift */; };
 		595BE2241B912BDB000C45E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 595BE2221B912BDB000C45E2 /* Main.storyboard */; };
 		595BE2261B912BDB000C45E2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 595BE2251B912BDB000C45E2 /* Images.xcassets */; };
 		595BE2291B912BDB000C45E2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 595BE2271B912BDB000C45E2 /* LaunchScreen.xib */; };
 		595BE2351B912BDB000C45E2 /* RM_PlannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595BE2341B912BDB000C45E2 /* RM_PlannerTests.swift */; };
+		595BE23F1B912D14000C45E2 /* DailyPlansView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595BE23E1B912D14000C45E2 /* DailyPlansView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,13 +32,14 @@
 		595BE21A1B912BDB000C45E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		595BE21B1B912BDB000C45E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		595BE21E1B912BDB000C45E2 /* RM_Planner.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RM_Planner.xcdatamodel; sourceTree = "<group>"; };
-		595BE2201B912BDB000C45E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		595BE2201B912BDB000C45E2 /* DailyPlansViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyPlansViewController.swift; sourceTree = "<group>"; };
 		595BE2231B912BDB000C45E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		595BE2251B912BDB000C45E2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		595BE2281B912BDB000C45E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		595BE22E1B912BDB000C45E2 /* RM PlannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RM PlannerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		595BE2331B912BDB000C45E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		595BE2341B912BDB000C45E2 /* RM_PlannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RM_PlannerTests.swift; sourceTree = "<group>"; };
+		595BE23E1B912D14000C45E2 /* DailyPlansView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyPlansView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				595BE21B1B912BDB000C45E2 /* AppDelegate.swift */,
-				595BE2201B912BDB000C45E2 /* ViewController.swift */,
+				595BE2201B912BDB000C45E2 /* DailyPlansViewController.swift */,
+				595BE23E1B912D14000C45E2 /* DailyPlansView.swift */,
 				595BE2221B912BDB000C45E2 /* Main.storyboard */,
 				595BE2251B912BDB000C45E2 /* Images.xcassets */,
 				595BE2271B912BDB000C45E2 /* LaunchScreen.xib */,
@@ -159,6 +162,7 @@
 		595BE20E1B912BDB000C45E2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Micah Wilson";
 				TargetAttributes = {
@@ -215,9 +219,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				595BE2211B912BDB000C45E2 /* ViewController.swift in Sources */,
+				595BE2211B912BDB000C45E2 /* DailyPlansViewController.swift in Sources */,
 				595BE21C1B912BDB000C45E2 /* AppDelegate.swift in Sources */,
 				595BE21F1B912BDB000C45E2 /* RM_Planner.xcdatamodeld in Sources */,
+				595BE23F1B912D14000C45E2 /* DailyPlansView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +420,7 @@
 				595BE23A1B912BDB000C45E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		595BE23B1B912BDB000C45E2 /* Build configuration list for PBXNativeTarget "RM PlannerTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +429,7 @@
 				595BE23D1B912BDB000C45E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
