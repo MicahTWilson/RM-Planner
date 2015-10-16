@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53F089E41BD09291003BE15C /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F089E31BD09291003BE15C /* DatePickerView.swift */; settings = {ASSET_TAGS = (); }; };
+		53F089E61BD09A58003BE15C /* DateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F089E51BD09A58003BE15C /* DateCell.swift */; settings = {ASSET_TAGS = (); }; };
 		595BE21C1B912BDB000C45E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595BE21B1B912BDB000C45E2 /* AppDelegate.swift */; };
 		595BE21F1B912BDB000C45E2 /* RM_Planner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 595BE21D1B912BDB000C45E2 /* RM_Planner.xcdatamodeld */; };
 		595BE2211B912BDB000C45E2 /* DailyPlansViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595BE2201B912BDB000C45E2 /* DailyPlansViewController.swift */; };
@@ -31,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		53F089E31BD09291003BE15C /* DatePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
+		53F089E51BD09A58003BE15C /* DateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateCell.swift; sourceTree = "<group>"; };
 		595BE2161B912BDB000C45E2 /* RM Planner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RM Planner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		595BE21A1B912BDB000C45E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		595BE21B1B912BDB000C45E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -130,6 +134,8 @@
 			children = (
 				595BE23E1B912D14000C45E2 /* DailyPlansView.swift */,
 				59CFB5561BD040DF00AB8F9D /* DailyGoalsView.swift */,
+				53F089E31BD09291003BE15C /* DatePickerView.swift */,
+				53F089E51BD09A58003BE15C /* DateCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -256,8 +262,10 @@
 				59CFB5571BD040DF00AB8F9D /* DailyGoalsView.swift in Sources */,
 				59CFB5591BD04E4400AB8F9D /* PlannerTextField.swift in Sources */,
 				59CFB5551BD040D300AB8F9D /* DailyGoalsViewController.swift in Sources */,
+				53F089E61BD09A58003BE15C /* DateCell.swift in Sources */,
 				595BE21C1B912BDB000C45E2 /* AppDelegate.swift in Sources */,
 				595BE21F1B912BDB000C45E2 /* RM_Planner.xcdatamodeld in Sources */,
+				53F089E41BD09291003BE15C /* DatePickerView.swift in Sources */,
 				595BE23F1B912D14000C45E2 /* DailyPlansView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

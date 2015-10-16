@@ -8,7 +8,7 @@
 
 import UIKit
 
-let daysOfTheWeek: [String] = ["Sat", "Sun", "Mon", "Tue", "Wed", "Thu", "Fri"]
+let daysOfTheWeek: [String] = ["", "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
 
 class DailyPlansView: UIView {
     @IBOutlet weak var planerView: UIView!
@@ -16,14 +16,16 @@ class DailyPlansView: UIView {
     @IBOutlet weak var leftTimeView: UIView!
     @IBOutlet weak var monthLabel: UILabel!
     @IBOutlet weak var dayLabel: UILabel!
+    @IBOutlet weak var dateSelectionView: DatePickerView!
+    @IBOutlet weak var drawerButton: UIButton!
     let amountOfTime = 18
     let startTime = 6
+    var date = NSDate()
     
     override func layoutSubviews() {
         super.layoutSubviews()
         
-        self.monthLabel.text = self.getMonth(NSDate())
-        self.dayLabel.text = self.getDay(NSDate())
+        updateView()
         
         self.planerView.layer.cornerRadius = 10
         self.planerView.layer.borderColor = UIColor.darkGrayColor().CGColor
@@ -36,7 +38,11 @@ class DailyPlansView: UIView {
         self.leftTimeView.layer.borderWidth = 1
         self.leftTimeView.layer.cornerRadius = 10
         
-        if self.subviews.count <= 11 {
+        self.dateSelectionView.layer.borderColor = UIColor.darkGrayColor().CGColor
+        self.dateSelectionView.layer.borderWidth = 1
+        self.dateSelectionView.layer.cornerRadius = 10
+        
+        if self.subviews.count <= 12 {
             for index in 0...18 {
                 let yValue = topPlansView.frame.origin.y + topPlansView.frame.height + planerView.frame.origin.y
                 let height = (planerView.frame.height - topPlansView.frame.height - 12) / 18
@@ -63,6 +69,11 @@ class DailyPlansView: UIView {
             }
         }
 
+    }
+    
+    func updateView() {
+        self.monthLabel.text = self.getMonth(date)
+        self.dayLabel.text = self.getDay(date)
     }
     
     func getMonth(date: NSDate) -> String {
