@@ -15,6 +15,9 @@
 		595BE2291B912BDB000C45E2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 595BE2271B912BDB000C45E2 /* LaunchScreen.xib */; };
 		595BE2351B912BDB000C45E2 /* RM_PlannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595BE2341B912BDB000C45E2 /* RM_PlannerTests.swift */; };
 		595BE23F1B912D14000C45E2 /* DailyPlansView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595BE23E1B912D14000C45E2 /* DailyPlansView.swift */; };
+		59CFB5551BD040D300AB8F9D /* DailyGoalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CFB5541BD040D300AB8F9D /* DailyGoalsViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		59CFB5571BD040DF00AB8F9D /* DailyGoalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CFB5561BD040DF00AB8F9D /* DailyGoalsView.swift */; settings = {ASSET_TAGS = (); }; };
+		59CFB5591BD04E4400AB8F9D /* PlannerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CFB5581BD04E4400AB8F9D /* PlannerTextField.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,9 @@
 		595BE2331B912BDB000C45E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		595BE2341B912BDB000C45E2 /* RM_PlannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RM_PlannerTests.swift; sourceTree = "<group>"; };
 		595BE23E1B912D14000C45E2 /* DailyPlansView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyPlansView.swift; sourceTree = "<group>"; };
+		59CFB5541BD040D300AB8F9D /* DailyGoalsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyGoalsViewController.swift; sourceTree = "<group>"; };
+		59CFB5561BD040DF00AB8F9D /* DailyGoalsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyGoalsView.swift; sourceTree = "<group>"; };
+		59CFB5581BD04E4400AB8F9D /* PlannerTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlannerTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,8 +88,9 @@
 			isa = PBXGroup;
 			children = (
 				595BE21B1B912BDB000C45E2 /* AppDelegate.swift */,
-				595BE2201B912BDB000C45E2 /* DailyPlansViewController.swift */,
-				595BE23E1B912D14000C45E2 /* DailyPlansView.swift */,
+				59CFB55B1BD07F0B00AB8F9D /* ViewControllers */,
+				59CFB55A1BD07F0300AB8F9D /* Views */,
+				59CFB55C1BD07F1200AB8F9D /* CustomObjects */,
 				595BE2221B912BDB000C45E2 /* Main.storyboard */,
 				595BE2251B912BDB000C45E2 /* Images.xcassets */,
 				595BE2271B912BDB000C45E2 /* LaunchScreen.xib */,
@@ -116,6 +123,32 @@
 				595BE2331B912BDB000C45E2 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		59CFB55A1BD07F0300AB8F9D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				595BE23E1B912D14000C45E2 /* DailyPlansView.swift */,
+				59CFB5561BD040DF00AB8F9D /* DailyGoalsView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		59CFB55B1BD07F0B00AB8F9D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				595BE2201B912BDB000C45E2 /* DailyPlansViewController.swift */,
+				59CFB5541BD040D300AB8F9D /* DailyGoalsViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		59CFB55C1BD07F1200AB8F9D /* CustomObjects */ = {
+			isa = PBXGroup;
+			children = (
+				59CFB5581BD04E4400AB8F9D /* PlannerTextField.swift */,
+			);
+			name = CustomObjects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +253,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				595BE2211B912BDB000C45E2 /* DailyPlansViewController.swift in Sources */,
+				59CFB5571BD040DF00AB8F9D /* DailyGoalsView.swift in Sources */,
+				59CFB5591BD04E4400AB8F9D /* PlannerTextField.swift in Sources */,
+				59CFB5551BD040D300AB8F9D /* DailyGoalsViewController.swift in Sources */,
 				595BE21C1B912BDB000C45E2 /* AppDelegate.swift in Sources */,
 				595BE21F1B912BDB000C45E2 /* RM_Planner.xcdatamodeld in Sources */,
 				595BE23F1B912D14000C45E2 /* DailyPlansView.swift in Sources */,
